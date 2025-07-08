@@ -26,7 +26,7 @@ graph LR
 
 ## Data Flow
 - **Bronze Table**<br/>
-    Raw parquet data ingested using DLT Autoloader into Delta format.
+    Ingest raw parquet data using DLT Autoloader into Delta format.
 
 - **Silver Table**<br/>
     With refined schema, and filter data to only have valid trips inside New York city.
