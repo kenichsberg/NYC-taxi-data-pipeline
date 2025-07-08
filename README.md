@@ -25,9 +25,6 @@ graph LR
 
 
 ## Data Flow
-- **Ingestion**<br/>
-    From [NYC TLC site](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) download parquet files and store in S3:
-
 - **Bronze Table**<br/>
     Raw parquet data ingested using DLT Autoloader into Delta format.
 
