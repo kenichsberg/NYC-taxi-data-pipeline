@@ -1,6 +1,6 @@
 # NYC taxi data pipeline
 
-This project demonstrates a modern data platform pipeline that ingests and processes [NYC taxi trip record data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) using **AWS**, **Databricks**, and **Delta Lake**. Designed as an ELT-style pipeline for batch analytics.
+This project demonstrates a data platform pipeline that ingests and processes [NYC taxi trip record data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) using **AWS**, **Databricks**, and **Delta Lake**. Designed as an ELT-style pipeline for batch analytics.
 
 ---
 
@@ -19,7 +19,7 @@ graph LR
 | -------------- | ------------------------------------- |
 | Ingestion      | AWS Lambda / Databricks Autoloader    |
 | Storage        | Amazon S3 (Raw), Delta Lake (Bronze+) |
-| Transformation | Databricks DLT (Python / SQL)         |
+| Transformation | Databricks DLT (PySpark / SQL)        |
 | Orchestration  | Databricks Workflows / Jobs           |
 | BI Layer       | Power BI                              |
 
